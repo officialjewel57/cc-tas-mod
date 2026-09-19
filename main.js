@@ -72,7 +72,7 @@ function TPSStep() {
     }
 
 function KeyBind(additional) {
-    Game.('Press a key to set!'+(additional?('<br>press esc to set as Never, and click button again to set as Always'):''), '', 0);
+    Game.Notify('Press a key to set!'+(additional?('<br>press esc to set as Never, and click button again to set as Always'):''), '', 0);
 }
 function changeGrimoire() {
     Game.ObjectsById[7].minigame.spellsById[6].win=function(){
