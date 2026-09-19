@@ -790,13 +790,20 @@ Game.registerMod("tasmod",{
             } else {
                 godzForce = amo;
             }
-            Game.gainBuff("devastation", 10)
-            Game.buffs.Devastation.multClick = godzForce;
+            Game.gainBuff("devastation", 10, godzForce+1)
             Game.Objects.Cursor.amount = 0;
             PlaySound('snd/buy4.mp3',0.75);
             PlaySound('snd/sell2.mp3',0.75);
-            if(Game.cookies<144115188075855870){
-                Game.cookies = 0;
+            if(godzForce == 70368744177664){
+                if(Game.cookies<144115188075855870){
+                    Game.cookies = 0;
+                }
+            } else {
+                if(Game.cookies<(11*(godzForce*100))){
+                    Game.cookies = 0;
+                } else {
+                    Game.cookies-=(11*(godzForce*100));
+                }
             }
             return godzForce;
         }
