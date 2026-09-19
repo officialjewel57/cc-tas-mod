@@ -41,5 +41,7 @@ This means it simulates buying and selling 1 cursor quadrillions of times in one
 Starts the in-game timer  
 **SHIFT+.**    
 Stops the in-game timer  
+**SHIFT+T**  
+Turns TAS Mode on and off (shows notifs in game instead of in console)
 
 Happy TASing!
