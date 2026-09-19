@@ -8,38 +8,38 @@ This mod is meant to make human-made (and semi-automated) tases easier to make. 
 
 ### FORCING EFFECTS
 CTRL+0
--# Forces frenzy effect
+<small>Forces frenzy effect</small>
 CTRL+1
--# Forces lucky effect
+<small>Forces lucky effect</small>
 CTRL+2
--# Forces click frenzy effect
+<small>Forces click frenzy effect</small>
 CTRL+3
--# Forces cookie storm effect
+<small>Forces cookie storm effect
 CTRL+4
--# Forces cookie chains
+<small>Forces cookie chains
 CTRL+5
--# Forces sweets (free sugar lump)
+<small>Forces sweets (free sugar lump)
 CTRL+6
--# Forces building special effect
+<small>Forces building special effect
 
 ### AUTOMATION AND FORCING OUTCOMES
 
 CTRL+7
--# Automatically clicks GCS
+<small>Automatically clicks GCS
 CTRL+8
--# Stops automatic GC clicking
+<small>Stops automatic GC clicking
 CTRL+9
--# Forces DEoRL spawning (Distilled Essence of Redoubled Luck)
+<small>Forces DEoRL spawning (Distilled Essence of Redoubled Luck)
 SHIFT+M
--# (ONLY WORKS WITH GODZAMOK IN THE PANTHEON IN THE DIAMOND SLOT)
--# Forces maximum godzamok buff at your current cookie amount (accounts for precision loss)
--# This means it simulates buying and selling 1 cursor quadrillions of times in one frame
+<small>(ONLY WORKS WITH GODZAMOK IN THE PANTHEON IN THE DIAMOND SLOT)
+<small>Forces maximum godzamok buff at your current cookie amount (accounts for precision loss)
+<small>This means it simulates buying and selling 1 cursor quadrillions of times in one frame
 
 ### TIMER
 
 SHIFT+,
--# Starts the in-game timer
+<small>Starts the in-game timer
 SHIFT+.
--# Stops the in-game timer
+<small>Stops the in-game timer
 
 Happy TASing!
