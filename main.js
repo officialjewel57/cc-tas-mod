@@ -766,6 +766,7 @@ Game.registerMod("tasmod",{
         // var forceGreenYeastDigestivesDrop = false;
         // var forceIchorSyrupDrop = false;
         // var forceMutations = "";
+        var tasMode = false;
 
         // in game functions
 
@@ -871,47 +872,109 @@ Game.registerMod("tasmod",{
             }
         }
 
+        var onOff = 0;
         AddEvent(document, 'keydown', e => {
-            if (e.ctrlKey && e.keyCode === 48) {
+            if (e.shiftKey && e.keyCode === 48) {
                 //ctrl+0
                 forceGCEff('frenzy');
-                
-            } else if (e.ctrlKey && e.keyCode === 49) {
+                console.log("forcing frenzy")
+                if(tasMode == false){
+                    Game.Notify("Forcing Frenzies!", "", 0)
+                }
+            } else if (e.shiftKey && e.keyCode === 49) {
                 //ctrl+1
                 forceGCEff('lucky');
-            } else if (e.ctrlKey && e.keyCode === 50) {
+                console.log("forcing lucky")
+                if(tasMode == false){
+                    Game.Notify("Forcing Luckies!", "", 0)
+                }
+            } else if (e.shiftKey && e.keyCode === 50) {
                 //ctrl+2
                 forceGCEff('click frenzy');
-            } else if (e.ctrlKey && e.keyCode === 51) {
+                console.log("forcing cf")
+                if(tasMode == false){
+                    Game.Notify("Forcing Click Frenzies!", "", 0)
+                }
+            } else if (e.shiftKey && e.keyCode === 51) {
                 //ctrl+3
                 forceGCEff('cookie storm');
-            } else if (e.ctrlKey && e.keyCode === 52) {
+                console.log("forcing cs")
+                if(tasMode == false){
+                    Game.Notify("Forcing Cookie Storms!", "", 0)
+                }
+            } else if (e.shiftKey && e.keyCode === 52) {
                 //ctrl+4
                 forceGCEff('chain cookie');
-            } else if (e.ctrlKey && e.keyCode === 53) {
+                console.log("forcing cookie chain")
+                if(tasMode == false){
+                    Game.Notify("Forcing Cookie Chains!", "", 0)
+                }
+            } else if (e.shiftKey && e.keyCode === 53) {
                 //ctrl+5
                 forceGCEff('sweet');
-            } else if (e.ctrlKey && e.keyCode === 54) {
+                console.log("forcing sweets")
+                if(tasMode == false){
+                    Game.Notify("Forcing Sweets (free sugar lumps)!", "", 0)
+                }
+            } else if (e.shiftKey && e.keyCode === 54) {
                 //ctrl+6
                 forceGCEff('building special');
+                console.log("forcing bs")
+                if(tasMode == false){
+                    Game.Notify("Forcing Building Specials!", "", 0)
+                }
             } else if (e.shiftKey && e.key.toLowerCase() === "m") {
                 forceGodzamok("max");
-            } else if (e.ctrlKey && e.keyCode === 55) {
+                console.log("max godzamok")
+                if(tasMode == false){
+                    Game.Notify("Max Godzamok Buff!", "", 0)
+                }
+            } else if (e.shiftKey && e.keyCode === 55) {
                 //ctrl+7
                 forceClickGCS(true);
-            } else if (e.ctrlKey && e.keyCode === 56) {
+                console.log("autoclicking gcs")
+                if(tasMode == false){
+                    Game.Notify("Autoclicking GCs!", "", 0)
+                }
+            } else if (e.shiftKey && e.keyCode === 56) {
                 //ctrl+8
                 forceClickGCS(false);
-            } else if (e.ctrlKey && e.keyCode === 57) {
+                console.log("stopped autoclicking gc")
+                if(tasMode == false){
+                    Game.Notify("Stopped autoclicking GCs!", "", 0)
+                }
+            } else if (e.shiftKey && e.keyCode === 57) {
                 //ctrl+9
                 forceDeorl(true);
+                console.log("forcing deorls")
+                if(tasMode == false){
+                    Game.Notify("DEoRLs Forced!", "", 0)
+                }
             } else if (e.shiftKey && e.keyCode === 188){
                 //shift + ,
                 startTimer();
+                console.log("started timer")
+                if(tasMode == false){
+                    Game.Notify("Started Timer!", loc(""), 0)
+                }
             } else if (e.shiftKey && e.keyCode === 190) {
                 //shift + .
                 stopTimer();
-            }
+                console.log("stopped timer")
+                if(tasMode == false){
+                    Game.Notify("Stopped Timer!", loc(""), 0)
+                }
+            } else if (e.shiftKey && e.key.toLowerCase() === "t")
+                if(onOff == 0){
+                    onOff = 1;
+                    tasMode = true;
+                    console.log("tas mode on");
+                } else if(onOff == 1){
+                    onOff = 0;
+                    tasMode = false;
+                    Game.Notify(loc("Turned off TAS Mode!"), loc(""), 0);
+                    console.log("tas mode off");
+                }
         });
 
         // **force GC effects and maxed out cookie storm**
