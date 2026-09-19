@@ -31,7 +31,7 @@ Stops automatic GC clicking
 **CTRL+9**  
 Forces DEoRL spawning (Distilled Essence of Redoubled Luck)  
 **SHIFT+M**  
-(ONLY WORKS WITH GODZAMOK IN THE PANTHEON IN THE DIAMOND SLOT)  
+__*(ONLY WORKS WITH GODZAMOK IN THE PANTHEON IN THE DIAMOND SLOT)*__  
 Forces maximum godzamok buff at your current cookie amount (accounts for precision loss)  
 This means it simulates buying and selling 1 cursor quadrillions of times in one frame  
   
