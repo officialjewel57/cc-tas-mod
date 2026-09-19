@@ -723,6 +723,9 @@ if (!(typeof CCCEMUILoaded === 'undefined')) {
     RedrawCCCEM();
 };
 
+//THIS IS MY CODE
+//THIS IS MY CODE
+
 Game.registerMod("tasmod",{
     init:function(){
         Game.Notify(loc('TAS MOD LOADED!'), loc('Press p to change tick speed, and look at the github repository for more info (keybinds n stuff) at https://github.com/officialjewel57/cc-tas-mod'), 0)
