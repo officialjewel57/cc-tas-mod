@@ -7,28 +7,28 @@ This mod is meant to make human-made (and semi-automated) tases easier to make. 
 ## KEYBINDS
 
 ### FORCING EFFECTS
-**CTRL+0**  
+**SHIFT+0**  
 Forces frenzy effect  
-**CTRL+1**  
+**SHIFT+1**  
 Forces lucky effect  
-**CTRL+2**  
+**SHIFT+2**  
 Forces click frenzy effect  
-**CTRL+3**  
+**SHIFT+3**  
 Forces cookie storm effect  
-**CTRL+4**  
+**SHIFT+4**  
 Forces cookie chains  
-**CTRL+5**  
+**SHIFT+5**  
 Forces sweets (free sugar lump)   
-**CTRL+6**  
+**SHIFT+6**  
 Forces building special effect  
   
 ### AUTOMATION AND FORCING OUTCOMES  
   
-**CTRL+7**  
+**SHIFT+7**  
 Automatically clicks GCS  
-**CTRL+8**  
+**SHIFT+8**  
 Stops automatic GC clicking  
-**CTRL+9**  
+**SHIFT+9**  
 Forces DEoRL spawning (Distilled Essence of Redoubled Luck)  
 **SHIFT+M**  
 __*(ONLY WORKS WITH GODZAMOK IN THE PANTHEON IN THE DIAMOND SLOT)*__  
