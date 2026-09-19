@@ -71,8 +71,8 @@ function TPSStep() {
     tpsLoop=setTimeout(TPSStep,Math.round(1000/tpsSpeed))
     }
 
-function notifyKeyBind(additional) {
-    Game.Notify('Press a key to set!'+(additional?('<br>press esc to set as Never, and click button again to set as Always'):''), '', 0);
+function KeyBind(additional) {
+    Game.('Press a key to set!'+(additional?('<br>press esc to set as Never, and click button again to set as Always'):''), '', 0);
 }
 function changeGrimoire() {
     Game.ObjectsById[7].minigame.spellsById[6].win=function(){
@@ -270,7 +270,6 @@ Game.registerMod('P for Pause', {
                 this.changeGameSpeed(1);
             }
         });
-        if (this.defaultHotkeysEnabled) { Game.Notify(loc('P For Pause loaded!'), loc('Press P to pause the game, or press Shift+P to change your game speed.'), 0); }
     },
     changeGameSpeed: function(mult, noCSSUpdates) {
         if (typeof mult != 'number' || mult < 0) { return; }
@@ -726,7 +725,7 @@ if (!(typeof CCCEMUILoaded === 'undefined')) {
 
 Game.registerMod("tasmod",{
     init:function(){
-        Game.Notify(loc('P For Pause loaded!'), loc('Press P to pause the game, or press Shift+P to change your game speedsdfkhjisdfhkjfdsjkhsfd.'), 0)
+        Game.Notify(loc('TAS Mod has loaded successfully!'), loc('Press SHIFT+P to change your speed and view the README on the repository for this mod (https://github.com/officialjewel57/cc-tas-mod'), 0)
         // in game luck related variables
         var gcEff = "";
         // var wcEff = "";
